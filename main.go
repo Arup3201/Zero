@@ -1,6 +1,6 @@
 package main
 
-import "Zero/cmd"
+import "github.com/zero/cmd"
 
 func main() {
 	cmd.Execute()

@@ -19,7 +19,7 @@ func Add(first string, second string) (result string) {
 		return
 	}
 
-	return fmt.Sprintf("%f\n", num1+num2)
+	return fmt.Sprintf("%.2f", num1+num2)
 }
 
 func Subtract(first string, second string) (result string) {
@@ -35,5 +35,5 @@ func Subtract(first string, second string) (result string) {
 		return
 	}
 
-	return fmt.Sprintf("%f\n", num1-num2)
+	return fmt.Sprintf("%.2f", num1-num2)
 }

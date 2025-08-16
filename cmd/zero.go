@@ -1,0 +1,39 @@
+package cmd
+
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
+
+func Add(first string, second string) (result string) {
+	num1, err := strconv.ParseFloat(first, 64)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: First value is invalid")
+		return
+	}
+
+	num2, err := strconv.ParseFloat(second, 64)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: Second value is invalid")
+		return
+	}
+
+	return fmt.Sprintf("%f\n", num1+num2)
+}
+
+func Subtract(first string, second string) (result string) {
+	num1, err := strconv.ParseFloat(first, 64)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: First value is invalid")
+		return
+	}
+
+	num2, err := strconv.ParseFloat(second, 64)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Error: Second value is invalid")
+		return
+	}
+
+	return fmt.Sprintf("%f\n", num1-num2)
+}

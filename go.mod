@@ -1,4 +1,4 @@
-module github.com/zero
+module github.com/Arup3201/zero
 
 go 1.24.5
 
